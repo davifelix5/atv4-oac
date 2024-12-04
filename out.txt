@@ -1,34 +1,9 @@
-Capitulo 2
-n = 128, Time = 0.003132 seconds
-n = 512, Time = 0.495136 seconds
-n = 1024, Time = 10.595874 seconds
-n = 128, Time = 0.002649 seconds
-n = 512, Time = 0.546159 seconds
-n = 1024, Time = 11.889224 seconds
-n = 128, Time = 0.002860 seconds
-n = 512, Time = 0.705691 seconds
-n = 1024, Time = 13.005255 seconds
-n = 128, Time = 0.002741 seconds
-n = 512, Time = 0.515581 seconds
-n = 1024, Time = 12.298147 seconds
-n = 128, Time = 0.003954 seconds
-n = 512, Time = 0.648073 seconds
-n = 1024, Time = 12.975810 seconds
-Capitulo 3
-n = 128, Time = 0.000836 seconds
-n = 512, Time = 0.250426 seconds
-n = 1024, Time = 3.983798 seconds
-n = 128, Time = 0.000884 seconds
-n = 512, Time = 0.242044 seconds
-n = 1024, Time = 3.826774 seconds
-n = 128, Time = 0.001191 seconds
-n = 512, Time = 0.215255 seconds
-n = 1024, Time = 3.339715 seconds
-n = 128, Time = 0.000734 seconds
-n = 512, Time = 0.196976 seconds
-n = 1024, Time = 3.783665 seconds
-n = 128, Time = 0.000735 seconds
-n = 512, Time = 0.178746 seconds
-n = 1024, Time = 3.484225 seconds
-Capitulo 4
-Capitulo 5
+10.520325
+3.078559
+12.542229
+3.739324
+12.247285
+3.266718
+11.626550
+3.494713
+11.386118

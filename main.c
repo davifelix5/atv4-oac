@@ -4,6 +4,8 @@
 #include <time.h>
 #include <mm_malloc.h>
 
+#define VERBOSE 0
+
 // Helper function to initialize a matrix with random values
 void initialize_matrix(double *matrix, int n, int is_random) {
     for (int i = 0; i < n * n; ++i) {
@@ -34,7 +36,11 @@ void benchmark_dgemm(int n) {
 
     // Calculate elapsed time
     double time_taken = (double)(end - start) / CLOCKS_PER_SEC;
-    printf("n = %d, Time = %f seconds\n", n, time_taken);
+    if (VERBOSE) {
+        printf("n = %d, Time = %f seconds\n", n, time_taken);
+    } else {
+        printf("%f\n", time_taken);
+    }
 
     // Free allocated memory
     _mm_free(A);
@@ -47,7 +53,7 @@ int main() {
     srand((unsigned int)time(NULL));
 
     // Run benchmarks for various matrix sizes
-    int sizes[] = {128, 512, 1024};
+    int sizes[] = {1024};
     int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
 
     for (int i = 0; i < num_sizes; ++i) {

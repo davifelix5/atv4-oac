@@ -2,9 +2,8 @@ common = main.c dgemm.h
 flags = -O2 -Wall -Wextra -std=c99 -fopenmp -lm
 
 all: cap2 cap3 cap4 cap5
-	for c in 2 3 4 5; do \
-		echo Capitulo $$c; \
-		for n in 0 1 2 3 4; do \
+	for n in 0 1 2 3 4; do \
+		for c in 2 3 4 5; do \
 			./cap$$c.out; \
 		done \
 	done > out.txt

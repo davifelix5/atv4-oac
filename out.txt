@@ -1,0 +1,10 @@
+Capitulo 2
+n = 128, Time = 0.003132 seconds
+n = 512, Time = 0.495136 seconds
+n = 1024, Time = 10.595874 seconds
+n = 128, Time = 0.002649 seconds
+n = 512, Time = 0.546159 seconds
+n = 1024, Time = 11.889224 seconds
+n = 128, Time = 0.002860 seconds
+n = 512, Time = 0.705691 seconds
+n = 1024, Time = 13.005255 seconds

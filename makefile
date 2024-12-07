@@ -1,12 +1,14 @@
 common = main.c dgemm.h
 flags = -Wall -Wextra -std=c99 -fopenmp -lm -O3
 
-all: cap2 cap3 cap4 cap5
-	for n in 0 1 2 3 4; do \
-		for c in 2 3 4 5; do \
-			./cap$$c.out; \
-		done \
+all: compile
+	for n in 2 3 4; do \
+		echo "Cap $$n"; \
+		./cap$$n.out; \
 	done > out.txt
+
+compile: cap2 cap3 cap4 cap5
+
 
 cap2:
 	gcc $(flags) -o cap2.out $(common) cap2.c

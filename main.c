@@ -5,6 +5,7 @@
 #include <mm_malloc.h>
 
 #define VERBOSE 0
+#define RUNS 5
 
 // Helper function to initialize a matrix with random values
 void initialize_matrix(double *matrix, int n, int is_random) {
@@ -56,8 +57,9 @@ int main() {
     int sizes[] = {1024};
     int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
 
-    for (int i = 0; i < num_sizes; ++i) {
-        benchmark_dgemm(sizes[i]);
+    for (int j = 0; j < RUNS; ++j) {	
+   	for (int i = 0; i < num_sizes; ++i) 
+        	benchmark_dgemm(sizes[i]);
     }
 
     return 0;
